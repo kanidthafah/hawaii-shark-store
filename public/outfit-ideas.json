@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/1.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 2,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/2.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 3,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/3.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 4,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/4.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 5,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/5.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 6,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/6.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 7,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/7.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 8,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/8.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 9,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/9.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 10,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/10.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 11,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/11.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 12,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/12.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 13,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/13.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 14,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/14.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  },
+  {
+    "id": 15,
+    "title": "Lorem ipsum dolor sit.",
+    "img": "/outfit/15.jpg",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, recusandae."
+  }
+]

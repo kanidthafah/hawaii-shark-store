@@ -1,101 +1,118 @@
-import Image from "next/image";
+"use client";
+import HeroSection from "@/components/HeroSection";
+import { FaTruck } from "react-icons/fa6";
+import { BiSolidWasher } from "react-icons/bi";
+import { TbIroningFilled } from "react-icons/tb";
+import FeaturedProducts from "@/components/FeaturedProducts";
+import NewProducts from "@/components/NewProducts";
+import {motion} from "framer-motion"
+interface Services {
+  title: string;
+  icon: any;
+  description: string;
+}
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const services: Services[] = [
+    {
+      title: "Free Shipping",
+      icon: <FaTruck />,
+      description: "Lorem ipsum dolor sit amet.",
+    },
+    {
+      title: "Washed Clothing",
+      icon: <BiSolidWasher />,
+      description: "Lorem ipsum dolor sit amet.",
+    },
+    {
+      title: "Ironed Clothing",
+      icon: <TbIroningFilled />,
+      description: "Lorem ipsum dolor sit amet.",
+    },
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+  return (
+    <main className="h-full">
+      <section className="w-full max-h-[60dvh] px-4 md:px-8 lg:px-14 xl:px-48 py-4">
+        <HeroSection />
+      </section>
+      <section className="w-full max-h-[25dvh] p-4 ">
+        <motion.div
+          initial={{ y: "-50%", opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 2.2, duration: 0.6, ease: "easeIn" },
+          }}
+          className="max-h-[150px] container bg-zinc-100 rounded-3xl p-4 flex justify-center items-center gap-2 lg:gap-10"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-center items-center text-center xl:mx-10"
+            >
+              <div className="bg-secondary text-bg text-xl p-4 rounded-full mb-4">
+                {service.icon}
+              </div>
+              <p className="text-font2 text-sm md:text-base capitalize font-semibold text-nowrap">
+                {service.title}
+              </p>
+              <p className="text-font text-xs md:text-sm font-light">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </motion.div>
+      </section>
+      <section className="w-full h-auto px-4 md:px-8 lg:px-14 xl:px-20 pt-4 pb-20">
+        <motion.div
+          initial={{ y: "-10%", opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 2.2, duration: 0.6, ease: "easeIn" },
+          }}
+          className="flex items-center"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div className="flex flex-col gap-2">
+            <div className="mb-3">
+              <h3 className="text-center md:text-start text-font2 font-medium text-base md:text-lg lg:text-lg">
+                Featured Hawaii Shirts
+              </h3>
+              <p className="text-center md:text-start text-font italic text-sm md:text-base">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+                facilis.
+              </p>
+            </div>
+            <FeaturedProducts />
+          </div>
+        </motion.div>
+      </section>
+      <section className="w-full h-auto px-4 md:px-8 lg:px-14 xl:px-20 pt-4 pb-20">
+        <motion.div
+          initial={{ y: "-10%", opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { delay: 2.2, duration: 0.6, ease: "easeIn" },
+          }}
+          className="flex items-center"
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <div className="flex flex-col gap-2">
+            <div className="mb-3">
+              <h3 className="text-center md:text-start text-font2 font-medium text-base md:text-lg lg:text-lg">
+                New Arrival!
+              </h3>
+              <p className="text-center md:text-start text-font italic text-sm md:text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                error quia modi veritatis? Voluptates facilis nesciunt quam ad
+                inventore soluta sapiente molestiae cupiditate minus debitis!
+              </p>
+            </div>
+            <NewProducts />
+          </div>
+        </motion.div>
+      </section>
+    </main>
   );
 }
