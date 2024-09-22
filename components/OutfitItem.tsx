@@ -1,7 +1,6 @@
 "use client";
 import React, { FC } from "react";
 import { HiFolderDownload } from "react-icons/hi";
-
 interface Outfit {
   id: number;
   title: string;

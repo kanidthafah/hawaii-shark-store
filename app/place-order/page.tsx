@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { FaCcVisa } from "react-icons/fa6";
 import { HiQrcode } from "react-icons/hi";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 export default function PlaceOrder() {
   const [method, set_method] = useState<string>("cod");

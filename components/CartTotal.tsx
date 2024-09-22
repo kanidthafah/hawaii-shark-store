@@ -2,7 +2,7 @@ import { ShopContext } from "@/context/ShopContext";
 import React, { FC, useContext } from "react";
 
 const CartTotal: FC = () => {
-  const { products, currency , delivery_fee, get_cart_amount } = useContext(ShopContext);
+  const { currency , delivery_fee, get_cart_amount } = useContext(ShopContext);
   return (
     <div className="w-full gap-3">
       <h3 className="text-lg md:text-xl lg:text-2xl uppercase font-semibold text-font2 my-3 text-center">

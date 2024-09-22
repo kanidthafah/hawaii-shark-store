@@ -1,7 +1,6 @@
 "use client";
 import { ShopContext } from "@/context/ShopContext";
 import { useContext, useEffect, useState } from "react";
-import { Checkbox } from "@/components/ui/checkbox";
 import {
   Select,
   SelectContent,

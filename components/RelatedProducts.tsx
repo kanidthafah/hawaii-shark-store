@@ -1,7 +1,6 @@
 import { ShopContext } from "@/context/ShopContext";
 import React, { FC, useContext, useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
-
 interface RelatedProductsProps {
   size: string[];
 }

@@ -2,7 +2,6 @@
 import React, { createContext, ReactNode, useState } from "react";
 import { products } from "@/assests/assets";
 import { toast } from "react-toastify";
-
 interface Products {
   id: number;
   brand: string;
@@ -14,11 +13,9 @@ interface Products {
   featured: boolean;
   date: number;
 }
-
 interface ShopContextProviderProps {
   children: ReactNode;
 }
-
 interface ShopContextType {
   products: Products[];
   currency: string;
@@ -38,11 +35,11 @@ const defaultContextValue: ShopContextType = {
   products: [],
   currency: "฿",
   delivery_fee: 0,
-  search: "", // initial value for search state
-  set_search: () => {}, // placeholder function for set_search
-  show_search: true, // initial value for show_search
-  set_show_search: () => {}, // placeholder function for set_show_search
-  cart_items: {}, // Initial cart is empty
+  search: "",
+  set_search: () => {}, 
+  show_search: true, 
+  set_show_search: () => {}, 
+  cart_items: {}, 
   addToCart: () => {},
   get_cart_count: () => 0,
   update_quantity: () => {},
@@ -51,7 +48,7 @@ const defaultContextValue: ShopContextType = {
 
 interface CartItems {
   [itemId: number]: {
-    [size: string]: number; // size is a string and maps to the quantity
+    [size: string]: number; 
   };
 }
 

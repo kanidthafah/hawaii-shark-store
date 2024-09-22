@@ -1,15 +1,11 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
