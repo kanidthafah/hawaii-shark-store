@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 interface Socials {
   name: string;
-  icon: any;
+  icon: JSX.Element;
   link: string;
 }
 
@@ -59,7 +59,7 @@ export default function About() {
             }}
             className="text-lg md:text-2xl lg:text-4xl text-font font-medium uppercase mb-4 lg:mb-10"
           >
-            "Second Hand Hawaii Shirts"
+            &quot;Second Hand Hawaii Shirts&quot;
           </motion.h3>
           <div className="flex flex-col lg:flex-row gap-5">
             <motion.div

@@ -9,7 +9,7 @@ import { FaLine } from "react-icons/fa6";
 
 interface Socials {
   name: string;
-  icon: any;
+  icon: JSX.Element;
   link: string;
 }
 

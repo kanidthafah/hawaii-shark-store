@@ -21,7 +21,7 @@ import { BsFillFileEarmarkRichtextFill } from "react-icons/bs";
 interface Links {
   name: string;
   path: string;
-  icon: any;
+  icon: JSX.Element;
 }
 
 const MobileNav: FC = () => {

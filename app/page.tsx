@@ -8,7 +8,7 @@ import NewProducts from "@/components/NewProducts";
 import {motion} from "framer-motion"
 interface Services {
   title: string;
-  icon: any;
+  icon: JSX.Element;
   description: string;
 }
 
