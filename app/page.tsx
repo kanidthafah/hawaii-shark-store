@@ -36,7 +36,7 @@ export default function Home() {
       <section className="w-full max-h-[60dvh] px-4 md:px-8 lg:px-14 xl:px-48 py-4">
         <HeroSection />
       </section>
-      <section className="w-full max-h-[25dvh] p-4 ">
+      <section className="w-full h-auto p-4 ">
         <motion.div
           initial={{ y: "20%", opacity: 0 }}
           animate={{
@@ -44,7 +44,7 @@ export default function Home() {
             opacity: 1,
             transition: { delay: 2.2, duration: 0.6, ease: "easeIn" },
           }}
-          className="max-h-[150px] container bg-zinc-100 rounded-3xl p-4 flex justify-center items-center gap-2 lg:gap-10"
+          className="max-h-[200px] container bg-zinc-100 rounded-3xl p-4 flex justify-center items-center gap-2 lg:gap-10"
         >
           {services.map((service, index) => (
             <div

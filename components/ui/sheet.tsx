@@ -64,7 +64,7 @@ const SheetContent = React.forwardRef<
       className={cn(sheetVariants({ side }), className)}
       {...props}
     >
-      <SheetPrimitive.Close className="absolute right-3.5 top-6 disabled:pointer-events-none data-[state=open]:bg-slate-100  dark:data-[state=open]:bg-slate-800">
+      <SheetPrimitive.Close className="absolute right-3.5 top-6 disabled:pointer-events-none data-[state=open]:bg-slate-100 ">
         <IoCloseOutline className="text-3xl text-primary hover:text-color1 hover:scale-110 transition-all duration-150 ease-out " />
         <span className="sr-only">Close</span>
       </SheetPrimitive.Close>

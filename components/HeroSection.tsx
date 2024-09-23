@@ -14,7 +14,7 @@ const HeroSection: FC = () => {
             opacity: 1,
             transition: { delay: 0.6, duration: 0.6, ease: "easeIn" },
           }}
-          className="text-4xl lg:text-6xl uppercase font-bold"
+          className="text-2xl md:text-4xl lg:text-6xl uppercase font-bold"
         >
           Hawaii Shark
         </motion.h1>
@@ -25,7 +25,7 @@ const HeroSection: FC = () => {
             opacity: 1,
             transition: { delay: 0.8, duration: 0.6, ease: "easeIn" },
           }}
-          className="text-lg lg:text-2xl"
+          className="text-base md:text-lg lg:text-2xl"
         >
           Fashion Forward, Wallet Friendly
         </motion.h3>
@@ -35,7 +35,7 @@ const HeroSection: FC = () => {
             opacity: 1,
             transition: { delay: 1, duration: 0.6, ease: "easeIn" },
           }}
-          className="max-w-[600px] text-md font-light text-sm lg:text-base my-1 lg:my-3"
+          className="max-w-[600px] text-md font-light text-xs md:text-sm lg:text-base my-1 lg:my-3"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure amet,
           nemo, voluptates perferendis perspiciatis, molestiae recusandae quasi
