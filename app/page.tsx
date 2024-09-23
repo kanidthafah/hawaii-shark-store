@@ -38,7 +38,7 @@ export default function Home() {
       </section>
       <section className="w-full max-h-[25dvh] p-4 ">
         <motion.div
-          initial={{ y: "-50%", opacity: 0 }}
+          initial={{ y: "20%", opacity: 0 }}
           animate={{
             y: 0,
             opacity: 1,
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
       <section className="w-full h-auto px-4 md:px-8 lg:px-14 xl:px-20 pt-4 pb-20">
         <motion.div
-          initial={{ y: "-10%", opacity: 0 }}
+          initial={{ y: "10%", opacity: 0 }}
           animate={{
             y: 0,
             opacity: 1,
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
       <section className="w-full h-auto px-4 md:px-8 lg:px-14 xl:px-20 pt-4 pb-20">
         <motion.div
-          initial={{ y: "-10%", opacity: 0 }}
+          initial={{ y: "10%", opacity: 0 }}
           animate={{
             y: 0,
             opacity: 1,

@@ -19,15 +19,15 @@ const CartTotal: FC = () => {
         <div className="flex justify-between text-font">
           <p>Shipping Fee</p>
           <p>
-            {currency} {delivery_fee}
+            {currency} {delivery_fee}.00
           </p>
         </div>
         <hr />
         <div className="flex justify-between text-font2 font-semibold">
           <p>Total</p>
           <p>
-            {currency}{" "}
-            {get_cart_amount() === 0 ? 0 : get_cart_amount() + delivery_fee}
+            {currency}
+            {get_cart_amount() === 0 ? 0 : get_cart_amount() + delivery_fee}.00
           </p>
         </div>
       </div>
