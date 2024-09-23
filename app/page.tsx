@@ -64,7 +64,7 @@ export default function Home() {
           ))}
         </motion.div>
       </section>
-      <section className="w-full h-auto px-4 md:px-8 lg:px-14 xl:px-20 pt-4 pb-20">
+      <section className="w-full h-auto px-4 md:px-8 lg:px-14 xl:px-20 py-20">
         <motion.div
           initial={{ y: "10%", opacity: 0 }}
           animate={{
